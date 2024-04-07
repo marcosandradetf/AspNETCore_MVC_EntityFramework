@@ -1,0 +1,61 @@
+@model InfnetMVC.Models.Funcionario
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<br />
+<div>
+    <h1 class="h2 text-center">Editar Funcionario</h1>
+</div>
+<hr />
+<br />
+
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="col-md-4">
+        <form asp-action="Edit" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            
+            <div class="form-floating">
+                <input type="text" class="form-control" id="Nome" asp-for="Nome">
+                <label asp-for="Nome"></label>
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Endereco" class="form-control" />
+                <label asp-for="Endereco" class="form-label"></label>
+                <span asp-validation-for="Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Telefone" class="form-control" />
+                <label asp-for="Telefone" class="form-label"></label>
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Email" class="form-control" />
+                <label asp-for="Email" class="form-label"></label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="DataDeNascimento" class="form-control" />
+                <label asp-for="DataDeNascimento" class="form-label">Data de Nascimento</label>
+                <span asp-validation-for="DataDeNascimento" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <select asp-for="DepartamentoId" class="form-select" asp-items="ViewBag.DepartamentoId"></select>
+                <label asp-for="DepartamentoId" class="form-label">Departamento</label>
+                <span asp-validation-for="DepartamentoId" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group d-grid gap-2">
+                <input type="submit" value="Atualizar" class="btn btn-success" />
+            </div>
+            <div class="form-group d-grid gap-2">
+                <a class="btn btn-outline-primary" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+

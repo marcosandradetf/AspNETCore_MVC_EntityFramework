@@ -1,0 +1,37 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.Data.SqlClient.DataClassification
+@model List<(string, string)>
+
+<br />
+<br />
+<div class="d-flex justify-content-center align-items-center">
+    <form asp-action="PostEdit">
+        @foreach (var role in Model)
+        {
+            @if (role.Item1 == "user")
+            {
+                <div class="form-floating mb-3">
+                    <input type="text" name="email"  value="@role.Item2" class="form-control" readonly/>
+                    <label for="@role.Item2">Usuário</label>
+                </div>
+            }
+
+            @if (role.Item1 == "systemRole")
+            {
+                var isChecked = Model.Any(r => r.Item1 == "userRole" && r.Item2 == role.Item2);
+
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" name="roles" value="@role.Item2" @(isChecked ? "checked" : "")>
+                    <label class="form-check-label" for="@role.Item2">@role.Item2</label>
+                </div>
+
+            }
+
+        }
+
+        <button type="submit" class="btn btn-success">Salvar alterações</button>
+        <a class="btn btn-outline-primary" asp-action="Index">Voltar</a>
+    </form>
+</div>
+
+

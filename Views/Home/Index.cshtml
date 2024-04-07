@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br />
+<div class="d-flex justify-content-center align-items-center">
+  <div class="bg-secondary text-light w-75 rounded mb-1 p-2">
+    <h2>ASP.NET Core Web App MVC</h2>
+    <p>Entrega de projeto</p>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+  <div class="bg-light text-dark w-75 rounded mb-1 p-2">
+    <p class="text-justify">Durante nosso aprendizado, tenho a dizer que o C# ganhou força com mais um desenvolvedor. Vou olhar para o C# com olhos diferentes após estes 6 meses. O que é o C# ? Uma linguagem moderna, com uma sintaxe elegante e agradável. Começamos com problemas simples e agora estamos aqui, entregando um fantástico trabalho em Asp.net. Vou falar um pouco de cada parte importante que passamos.<br /> <br />Começando pelo Entity Framework Core, este framework facilita a implementação em banco de dados, usando consultas LINQ, ao invés de escrever SQL manualmente. <br />Abaixo algumas imagens com exemplos na prática:</p>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+  <div id="carouselExampleCaptions" class="carousel slide w-75" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="https://achetec.com.br/arquivo/Compreendendo-o-DbContext-no-Entity-Framework-Core.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Entity Framework Core</h5>
+          <p>Como este framework facilita a implementação de classes em banco de dados</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="~/images/Entity.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Scaffold DBContext</h5>
+          <p>Essa ferramenta facilita a conexão e migração para o banco de dados, através de um processo automatizado que gera uma classe que herda a instancia DBContext</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="~/images/Migration.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Migration</h5>
+          <p>Aqui é gerado o Migration através do DBContext para migrar todos as classes em forma de tabelas no banco de dados</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="~/images/Update.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Update DataBase</h5>
+          <p>Ferramenta poderosa fornecida pelo Entity Framework Core que permite aplicar migrações pendentes ao banco de dados.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center mt-1">
+  <div class="bg-secondary text-light w-75 rounded mb-1 p-2">
+    <p class="text-justify">MVC e Razor Pages são como diferentes sabores de sorvete no mundo do desenvolvimento web com ASP.NET Core. O MVC é como um cone clássico, dividindo seu aplicativo em modelos, visualizações e controladores, oferecendo uma separação de preocupações nítida e saborosa. Enquanto isso, as Razor Pages são como uma casquinha de sorvete, uma abordagem mais direta e simplificada, onde tudo o que você precisa para uma página web saborosa está convenientemente empacotado em uma única página Razor. Então, escolha o sabor que mais lhe agrada e divirta-se criando suas delícias web!</p>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+  <div id="carouselExampleCaptions2" class="carousel slide w-75" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="~/images/Screen Shot 2024-03-30 at 2.06.03 AM.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>MVC</h5>
+          <p>Abordagem arquitetônica que divide uma aplicação em Model, View e Controller para uma organização modular e escalável.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="~/images/Screen Shot 2024-03-30 at 2.08.45 AM.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Razor Page</h5>
+          <p>Uma forma simplificada de construir páginas da web no ASP.NET Core, combinando lógica de manipulação de solicitações HTTP e apresentação em um único arquivo Razor.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center mt-1">
+  <div class="border text-dark w-75 rounded mb-1 p-2">
+    <p class="text-justify">ASP.NET Core Identity com contas individuais é como ter seu próprio guarda-roupa personalizado para autenticação e autorização em seu aplicativo web. É como se cada usuário recebesse uma chave exclusiva para acessar as partes do seu sistema que lhes interessam, garantindo que apenas as pessoas certas entrem no seu "closet" virtual. Com recursos flexíveis de gerenciamento de usuários, roles e políticas de segurança, o ASP.NET Core Identity torna a proteção de suas páginas web uma experiência elegante e personalizada. Então, vista sua identidade com estilo e segurança!</p>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center mt-1">
+  <div class="bg-light text-dark w-75 rounded mb-1 p-2">
+    <p class="text-justify">Por fim, eu digo que o que eu acrescentaria no aprendizado nesse bloco seria apenas a possibilidade de usar um Docker, bem como usar serviços externos para criar conta, como google etc. Também, explicar como seria a utilização do Asp.Net Core Idenity com Api usando um Vue, React ou Angular no Front. Mas isso iria demorar mais que 6 meses. Foi um ótimo semestre!</p>
+  </div>
+</div>

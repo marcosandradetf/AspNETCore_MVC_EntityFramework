@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-InfnetMVC-B74639E2-C92F-4465-A79F-D3435C02EF75</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+        <None Include="wwwroot\images\Razor.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="bootstrap" Version="5.3.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.3"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.3"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.3"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.3"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3"/>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\t\Controllers\" />
+      <Folder Include="Areas\t\Data\" />
+      <Folder Include="Areas\t\Models\" />
+      <Folder Include="Areas\t\Views\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Views\Departamento\Departamento.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Admin\Create.cshtml" />
+      <AdditionalFiles Include="Views\Admin\Delete.cshtml" />
+      <AdditionalFiles Include="Views\Admin\Details.cshtml" />
+      <AdditionalFiles Include="Views\Admin\Edit.cshtml" />
+      <AdditionalFiles Include="Views\Admin\Index.cshtml" />
+    </ItemGroup>
+
+</Project>

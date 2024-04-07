@@ -1,0 +1,24 @@
+@model IEnumerable<dynamic>
+
+<br />
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Usuário</th>
+            <th>Funções</th>
+            <th class="text-center">Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@string.Join(", ", user.Roles)</td>
+                <td class="d-flex justify-content-center">
+                    <a class="btn btn-outline-dark btn-sm" asp-action="Edit" asp-route-email="@user.UserName">Editar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
